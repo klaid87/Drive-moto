@@ -1,0 +1,16 @@
+.menu {
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+
+  &__link {
+    color: $text-color;
+    font-weight: 700;
+  }
+}

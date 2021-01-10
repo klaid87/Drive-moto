@@ -1,0 +1,34 @@
+.header {
+  &__top {
+    padding: 25px 0 20px;
+  }
+
+  &__top-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__action {
+    display: flex;
+    align-items: center;
+  }
+
+  &__address {
+    font-weight: 700;
+    font-style: normal;
+    padding-left: 30px;
+    position: relative;
+    margin-right: 85px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: 0;
+      width: 30px;
+      height: 30px;
+      background: url("../images/svg/adress-icon.svg") no-repeat center;
+    }
+  }
+}

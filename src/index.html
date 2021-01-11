@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -9,6 +10,66 @@
 </head>
 
 <body>
-  @@include('templates/header.html') 
+  @@include('templates/header.html')
+  <main>
+    <section class="banner-section">
+      <h2 class="visually-hidden">Секция с банером и акционной картой продукта</h2>
+      <div class="container">
+        <div class="banner-section__inner">
+          <ul class="banner-section__slider list">
+            <li class="banner-section__item-slider">
+              <a class="banner-section__link-slider" href="#">
+                <img class="banner-section__image" src="./images/banner-section/banner-image.jpg" alt="Изображение скутера рассекающего на волнах">
+              </a>
+            </li>
+            <li class="banner-section__item-slider">
+              <a class="banner-section__link-slider" href="#">
+                <img class="banner-section__image" src="./images/banner-section/banner-image.jpg" alt="Изображение скутера рассекающего на волнах">
+              </a>
+            </li>
+            <li class="banner-section__item-slider">
+              <a class="banner-section__link-slider" href="#">
+                <img class="banner-section__image" src="./images/banner-section/banner-image.jpg" alt="Изображение скутера рассекающего на волнах">
+              </a>
+            </li>
+            <li class="banner-section__item-slider">
+              <a class="banner-section__link-slider" href="#">
+                <img class="banner-section__image" src="./images/banner-section/banner-image.jpg" alt="Изображение скутера рассекающего на волнах">
+              </a>
+            </li>
+            <li class="banner-section__item-slider">
+              <a class="banner-section__link-slider" href="#">
+                <img class="banner-section__image" src="./images/banner-section/banner-image.jpg" alt="Изображение скутера рассекающего на волнах">
+              </a>
+            </li>
+            <li class="banner-section__item-slider">
+              <a class="banner-section__link-slider" href="#">
+                <img class="banner-section__image" src="./images/banner-section/banner-image.jpg" alt="Изображение скутера рассекающего на волнах">
+              </a>
+            </li>
+          </ul>
+          <a class="banner-section__item stock-item" href="#">
+            <div class="stock-item__header">
+              <span class="stock-item__label">акция</span>
+              <div class="stock-item__price">
+                <span class="stock-item__price-new price">190 000</span>
+                <span class="stock-item__price-old price">225 000</span>
+              </div>
+            </div>
+            <img class="stock-item__image" src="./images/stock-item/stock-image.png" alt="Изображение мотора для моторной лодки">
+            <h4 class="stock-item__title heading">Лодочный мотор Suzuki DF9.9BRS</h4>
+            <div class="stock-item__footer">
+              <p class="stock-item__text text">Акция действует до</p>
+              <time class="stock-item__date" datetime="31-08-2020 00:00">31.08.2020</time>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="js/slick/slick.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
+
 </html>

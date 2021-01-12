@@ -1,0 +1,107 @@
+.stock-item {
+  max-width: 265px;
+  border: 1px solid #CDCDCD;
+  border-radius: 3px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__label {
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: inline-block;
+    background-color: $brand-color;
+    padding: 8px 20px;
+  }
+
+  &__price{
+    display: block;
+    font-family: "Barlow", sans-serif;
+    text-align: right;
+    position: relative;
+
+    &--new {
+      font-size: 27px;
+      line-height: 1.18;
+      font-weight: 700;
+      color: $brand-color;
+      margin-right: 5px;
+      padding-right: 23px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 5px;
+        right: 0;
+        width: 16px;
+        height: 18px;
+        background: url("../../images/svg/icon-rub.svg") no-repeat center;
+      }
+    }
+
+    &--old {
+      font-size: 14px;
+      display: inline-block;
+      line-height: 1.21;
+      color: #C4C4C4;
+      margin-right: 15px;
+      background: url("../../images/svg/price-line-old.svg") no-repeat center;
+      padding: 2px 5px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 8px;
+        height: 10px;
+        right: -10px;
+        bottom: 3px;
+        background: url("../images/svg/icon-rub-old.svg") no-repeat center;
+      }
+    }
+  }
+
+  &__image {
+    object-fit: contain;
+  }
+
+  &__title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.16;
+    color: $text-color;
+    padding: 0 30px;
+    margin-bottom: 5px;
+  }
+
+  &__footer {
+    background-color: #F0F0F4;
+    text-align: center;
+    padding: 25px 20px;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 1.16;
+    text-align: center;
+    color: $text-color;
+  }
+
+  &__date {
+    font-family: "Barlow", sans-serif;
+    font-weight: 700;
+    color: $brand-color;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+}

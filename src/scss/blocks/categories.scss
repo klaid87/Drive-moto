@@ -1,0 +1,85 @@
+.categories {
+  $self: &;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__item {
+    border: 1px solid #CDCDCD;
+    border-radius: 3px;
+    width: 370px;
+    margin-bottom: 30px;
+    padding: 20px 20px 10px;
+    transition: all 0.3s;
+
+    &:hover {
+      box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+      border-color: transparent;
+
+      #{$self}__title {
+        color: $brand-color;
+      }
+
+      #{$self}__text {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__link {
+    display: flex;
+    height: 100%;
+  }
+
+  &__info {
+    margin-right: 5px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-family: "Barlow", sans-serif;
+    font-size: 23px;
+    line-height: 1.21;
+    font-weight: 700;
+    transition: all 0.3s;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 1.21;
+    color: #C4C4C4;
+    align-self: flex-start;
+    padding-right: 10px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 5px;
+      width: 6px;
+      height: 9px;
+      background: url('../../images/svg/details-icon.svg') no-repeat center;
+    }
+  }
+
+  &__picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-grow: 1;
+  }
+
+  &__image {
+    height: 100%;
+    display: block;
+    object-fit: contain;
+  }
+}

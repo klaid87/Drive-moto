@@ -1,0 +1,48 @@
+.product-item {
+  border: 1px solid #CDCDCD;
+  border-radius: 3px;
+  width: 271px;
+  padding: 50px 20px 30px;
+  text-align: center;
+  position: relative;
+
+  &__favourite {
+    position: absolute;
+    width: 24px;
+    height: 22px;
+    background: url("../images/svg/icon-heart.svg") no-repeat center;
+    top: 15px;
+    right: 20px;
+    outline: none;
+
+    &--active {
+      &::after {
+        content: "";
+        position: absolute;
+        width: 24px;
+        height: 22px;
+        background: url("../images/svg/icon-heart-active.svg") no-repeat center;
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+
+  &__image {
+    margin-bottom: 14px;
+  }
+
+  &__title {
+    font-size: 18px;
+    line-height: 1.16;
+    color: $text-color;
+    margin-bottom: 25px;
+  }
+
+  &__price {
+    font-family: "Barlow";
+    font-weight: 700;
+    font-size: 30px;
+    color: $text-color;
+  }
+}

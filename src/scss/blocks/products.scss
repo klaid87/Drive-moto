@@ -1,0 +1,27 @@
+.products {
+  &__heading {
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 25px;
+  }
+
+  &__items {
+    margin-bottom: 25px;
+  }
+
+  &__item {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 15px;
+    color: $text-color;
+    padding-bottom: 10px;
+
+    &:not(:last-of-type) {
+      margin-right: 50px;
+    }
+  }
+
+  &__item.tab--active {
+    border-bottom: 2px solid $brand-color;
+  }
+}

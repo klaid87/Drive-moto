@@ -1,8 +1,25 @@
 .products {
+  margin-bottom: 85px;
+  
   &__heading {
     font-weight: bold;
     font-size: 25px;
     margin-bottom: 25px;
+  }
+
+  &__slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+
+    &--prev {
+      left: -40px;
+    }
+
+    &--next {
+      right: -10px
+    }
   }
 
   &__items {
@@ -23,5 +40,22 @@
 
   &__item.tab--active {
     border-bottom: 2px solid $brand-color;
+  }
+
+  &__content {
+    margin-bottom: 35px;
+  }
+
+  &__more {
+    text-align: center;
+  }
+
+  &__more-link {
+    font-size: 15px;
+    padding: 15px 45px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    background-color: #F0F0F4;
+    color: $text-color;
   }
 }

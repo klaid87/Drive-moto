@@ -11,18 +11,10 @@
     padding: 10px 25px;
   }
 
-  &__item.tab--active {
+  &__item {
     background-color: $base-color;
     border-radius: 5px;
     text-shadow: 0 0 .9px $text-color, 0 0 .9px $text-color;
-  }
-
-  &__content-item {
-    display: none;
-  }
-
-  &__content-item.tabs__content--active {
-    display: block;
   }
 
   &__form {
@@ -44,7 +36,6 @@
   }
 
   &__button {
-    text-transform: uppercase;
     color: #ffffff;
     font-size: 14px;
     line-height: 1.21;

@@ -1,0 +1,93 @@
+.page-footer {
+  background: $base-color;
+  padding: 40px 0 30px;
+
+  &__top {
+    display: flex;
+    margin-bottom: 45px;
+  }
+
+  &__action {
+    margin-right: 160px;
+  }
+
+  &__text {
+    max-width: 222px;
+    font-size: 14px;
+    line-height: 1.21;
+    font-weight: 700;
+    margin-bottom: 35px;
+  }
+
+  &__form {
+    display: flex;
+  }
+
+  &__input {
+    border: none;
+    padding: 8px 12px;
+
+    &::placeholder {
+      font-size: 14px;
+      line-height: 1.21;
+      color: #C4C4C4;
+    }
+  }
+
+  &__button {
+    background-color: $brand-color;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 0.12em;
+    color: #FFFFFF;
+    padding: 10px 15px;
+  }
+
+  &__title {
+    font-size: 14px;
+    line-height: 1.21;
+    font-weight: 700;
+  }
+
+  &__list {
+    margin-right: 100px;
+  }
+
+  &__item {
+    margin-bottom: 3px;
+  }
+
+  &__link-info {
+    font-size: 14px;
+    line-height: 1.21;
+    color: $text-color;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__link {
+    font-size: 10px;
+    color: #48494D;
+    
+    &:not(:last-of-type) {
+      margin-right: 80px;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

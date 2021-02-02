@@ -70,6 +70,12 @@
     }
   }
 
+  &__picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   &__image {
     object-fit: contain;
   }

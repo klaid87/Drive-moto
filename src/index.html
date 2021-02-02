@@ -10,7 +10,83 @@
 </head>
 
 <body>
-  @@include('templates/header.html')
+  <header class="header">
+    <h1 class="visually-hidden">Интернет магазин Drive-moto</h1>
+    <div class="header__top">
+      <div class="container">
+        <div class="header__top-inner">
+          <nav class="menu">
+            <ul class="menu__list list">
+              <li class="menu__item">
+                <a class="menu__link" href="#">Магазины</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Акции</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Доставка и оплата</a>
+              </li>
+            </ul>
+          </nav>
+          <a class="logo" href="#">
+            <img class="logo__image" src="./images/svg/logo.svg" alt="Логотип Drive-moto">
+          </a>
+          <div class="header__action">
+            <address class="header__address">Москва, ул. Науки 25</address>
+            <ul class="user-list list">
+              <li class="user-list__item">
+                <a class="user-list__link" href="#">
+                  <img class="user-list__image" src="./images/svg/heart.svg" alt="Иконка сердце">
+                </a>
+              </li>
+              <li class="user-list__item">
+                <a class="user-list__link" href="#">
+                  <img class="user-list__image" src="./images/svg/user.svg" alt="Иконка юзер">
+                </a>
+              </li>
+              <li class="user-list__item">
+                <a class="user-list__link basket" href="#">
+                  <img class="user-list__image" src="./images/svg/basket.svg" alt="Иконка корзина">
+                  <span class="basket__number">1</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <div class="container">
+        <ul class="menu-categories list">
+          <li class="menu-categories__item">
+            <a class="menu-categories__link" href="#">Квадроциклы</a>
+          </li>
+          <li class="menu-categories__item">
+            <a class="menu-categories__link" href="#">Катера</a>
+          </li>
+          <li class="menu-categories__item">
+            <a class="menu-categories__link" href="catalog.html">Гидроциклы</a>
+          </li>
+          <li class="menu-categories__item">
+            <a class="menu-categories__link" href="#">Лодки</a>
+          </li>
+          <li class="menu-categories__item">
+            <a class="menu-categories__link" href="#">Вездеходы</a>
+          </li>
+          <li class="menu-categories__item">
+            <a class="menu-categories__link" href="#">Снегоходы</a>
+          </li>
+          <li class="menu-categories__item">
+            <a class="menu-categories__link" href="#">Двигатели</a>
+          </li>
+          <li class="menu-categories__item">
+            <a class="menu-categories__link" href="#">Запчасти</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  
   <main>
     <section class="banner-section">
       <h2 class="visually-hidden">Секция с банером и акционной картой продукта</h2>
@@ -56,7 +132,9 @@
                 <span class="stock-item__price stock-item__price--old">225 000</span>
               </div>
             </div>
-            <img class="stock-item__image" src="./images/stock-item/stock-image.png" alt="Изображение мотора для моторной лодки">
+            <picture class="stock-item__picture picture">
+              <img class="stock-item__image" src="./images/stock-item/stock-image.png" alt="Изображение мотора для моторной лодки">
+            </picture>
             <h4 class="stock-item__title heading">Лодочный мотор Suzuki DF9.9BRS</h4>
             <div class="stock-item__footer">
               <p class="stock-item__text text">Акция действует до</p>
@@ -187,7 +265,7 @@
           </nav>
           <div class="products__content">
             <ul id="product-tab-1" class="products__slider tabs-content tabs-content--active list">
-            <li class="products__content product-item">
+            <li class="products__slide product-item">
               <a class="product-item__wrapper" href="#">
                 <p class="product-item__hover-text text">посмотреть товар</p>
                 <img class="product-item__image" src="./images/product-item/product-1.png" alt="Изображение продукта">
@@ -199,7 +277,7 @@
               <button class="product-item__favourite button" type="button"><span class="visually-hidden">Любимый товар</span></button>
               <button class="product-item__basket button" type="button"><span class="visually-hidden">Корзина</span></button>
             </li>
-            <li class="products__content product-item product-item--sale">
+            <li class="products__slide product-item product-item--sale">
               <a class="product-item__wrapper" href="#">
                 <p class="product-item__hover-text text">посмотреть товар</p>
                 <img class="product-item__image" src="./images/product-item/product-2.png" alt="Изображение продукта">
@@ -211,7 +289,7 @@
               <button class="product-item__favourite button" type="button"><span class="visually-hidden">Любимый товар</span></button>
               <button class="product-item__basket button" type="button"><span class="visually-hidden">Корзина</span></button>
             </li>
-            <li class="products__content product-item">
+            <li class="products__slide product-item">
               <a class="product-item__wrapper" href="#">
                 <p class="product-item__hover-text text">посмотреть товар</p>
                 <img class="product-item__image" src="./images/product-item/product-3.png" alt="Изображение продукта">
@@ -223,7 +301,7 @@
               <button class="product-item__favourite button" type="button"><span class="visually-hidden">Любимый товар</span></button>
               <button class="product-item__basket button" type="button"><span class="visually-hidden">Корзина</span></button>
             </li>
-            <li class="products__content product-item product-item--sale product-item--not-available">
+            <li class="products__slide product-item product-item--sale product-item--not-available">
               <a class="product-item__wrapper" href="#">
                 <p class="product-item__hover-text text">посмотреть товар</p>
                 <img class="product-item__image" src="./images/product-item/product-4.png" alt="Изображение продукта">
@@ -235,7 +313,7 @@
               <button class="product-item__favourite button" type="button"><span class="visually-hidden">Любимый товар</span></button>
               <button class="product-item__basket button" type="button"><span class="visually-hidden">Корзина</span></button>
             </li>
-            <li class="products__content product-item product-item--sale">
+            <li class="products__slide product-item product-item--sale">
               <a class="product-item__wrapper" href="#">
                 <p class="product-item__hover-text text">посмотреть товар</p>
                 <img class="product-item__image" src="./images/product-item/product-2.png" alt="Изображение продукта">
@@ -247,7 +325,7 @@
               <button class="product-item__favourite button" type="button"><span class="visually-hidden">Любимый товар</span></button>
               <button class="product-item__basket button" type="button"><span class="visually-hidden">Корзина</span></button>
             </li>
-            <li class="products__content product-item product-item--sale">
+            <li class="products__slide product-item product-item--sale">
               <a class="product-item__wrapper" href="#">
                 <p class="product-item__hover-text text">посмотреть товар</p>
                 <img class="product-item__image" src="./images/product-item/product-2.png" alt="Изображение продукта">
@@ -263,7 +341,7 @@
           </div>
           <div class="products__content">
             <ul id="product-tab-2" class="products__slider tabs-content list">
-            <li class="products__content product-item">
+            <li class="products__slide product-item">
               <a class="product-item__wrapper" href="#">
                 <p class="product-item__hover-text text">посмотреть товар</p>
                 <img class="product-item__image" src="./images/product-item/product-1.png" alt="Изображение продукта">
@@ -275,7 +353,7 @@
               <button class="product-item__favourite button" type="button"><span class="visually-hidden">Любимый товар</span></button>
               <button class="product-item__basket button" type="button"><span class="visually-hidden">Корзина</span></button>
             </li>
-            <li class="products__content product-item product-item--sale">
+            <li class="products__slide product-item product-item--sale">
               <a class="product-item__wrapper" href="#">
                 <p class="product-item__hover-text text">посмотреть товар</p>
                 <img class="product-item__image" src="./images/product-item/product-2.png" alt="Изображение продукта">
@@ -287,7 +365,7 @@
               <button class="product-item__favourite button" type="button"><span class="visually-hidden">Любимый товар</span></button>
               <button class="product-item__basket button" type="button"><span class="visually-hidden">Корзина</span></button>
             </li>
-            <li class="products__content product-item">
+            <li class="products__slide product-item">
               <a class="product-item__wrapper" href="#">
                 <p class="product-item__hover-text text">посмотреть товар</p>
                 <img class="product-item__image" src="./images/product-item/product-3.png" alt="Изображение продукта">
@@ -299,7 +377,7 @@
               <button class="product-item__favourite button" type="button"><span class="visually-hidden">Любимый товар</span></button>
               <button class="product-item__basket button" type="button"><span class="visually-hidden">Корзина</span></button>
             </li>
-            <li class="products__content product-item product-item--sale product-item--not-available">
+            <li class="products__slide product-item product-item--sale product-item--not-available">
               <a class="product-item__wrapper" href="#">
                 <p class="product-item__hover-text text">посмотреть товар</p>
                 <img class="product-item__image" src="./images/product-item/product-4.png" alt="Изображение продукта">
@@ -311,7 +389,7 @@
               <button class="product-item__favourite button" type="button"><span class="visually-hidden">Любимый товар</span></button>
               <button class="product-item__basket button" type="button"><span class="visually-hidden">Корзина</span></button>
             </li>
-            <li class="products__content product-item product-item--sale">
+            <li class="products__slide product-item product-item--sale">
               <a class="product-item__wrapper" href="#">
                 <p class="product-item__hover-text text">посмотреть товар</p>
                 <img class="product-item__image" src="./images/product-item/product-2.png" alt="Изображение продукта">
@@ -323,7 +401,7 @@
               <button class="product-item__favourite button" type="button"><span class="visually-hidden">Любимый товар</span></button>
               <button class="product-item__basket button" type="button"><span class="visually-hidden">Корзина</span></button>
             </li>
-            <li class="products__content product-item product-item--sale">
+            <li class="products__slide product-item product-item--sale">
               <a class="product-item__wrapper" href="#">
                 <p class="product-item__hover-text text">посмотреть товар</p>
                 <img class="product-item__image" src="./images/product-item/product-2.png" alt="Изображение продукта">
@@ -366,7 +444,7 @@
           </nav>
           <div class="products__content">
             <ul id="product-addition-1" class="products__slider tabs-content tabs-content--active list">
-            <li class="products__content product-item">
+            <li class="products__slide product-item">
               <a class="product-item__wrapper" href="#">
                 <p class="product-item__hover-text text">посмотреть товар</p>
                 <img class="product-item__image" src="./images/product-item/product-01.png" alt="Изображение продукта">
@@ -378,7 +456,7 @@
               <button class="product-item__favourite button" type="button"><span class="visually-hidden">Любимый товар</span></button>
               <button class="product-item__basket button" type="button"><span class="visually-hidden">Корзина</span></button>
             </li>
-            <li class="products__content product-item product-item--sale">
+            <li class="products__slide product-item product-item--sale">
               <a class="product-item__wrapper" href="#">
                 <p class="product-item__hover-text text">посмотреть товар</p>
                 <img class="product-item__image" src="./images/product-item/product-02.png" alt="Изображение продукта">
@@ -390,7 +468,7 @@
               <button class="product-item__favourite button" type="button"><span class="visually-hidden">Любимый товар</span></button>
               <button class="product-item__basket button" type="button"><span class="visually-hidden">Корзина</span></button>
             </li>
-            <li class="products__content product-item">
+            <li class="products__slide product-item">
               <a class="product-item__wrapper" href="#">
                 <p class="product-item__hover-text text">посмотреть товар</p>
                 <img class="product-item__image" src="./images/product-item/product-03.png" alt="Изображение продукта">
@@ -402,7 +480,7 @@
               <button class="product-item__favourite button" type="button"><span class="visually-hidden">Любимый товар</span></button>
               <button class="product-item__basket button" type="button"><span class="visually-hidden">Корзина</span></button>
             </li>
-            <li class="products__content product-item product-item--sale product-item--not-available">
+            <li class="products__slide product-item product-item--sale product-item--not-available">
               <a class="product-item__wrapper" href="#">
                 <p class="product-item__hover-text text">посмотреть товар</p>
                 <img class="product-item__image" src="./images/product-item/product-04.png" alt="Изображение продукта">
@@ -414,7 +492,7 @@
               <button class="product-item__favourite button" type="button"><span class="visually-hidden">Любимый товар</span></button>
               <button class="product-item__basket button" type="button"><span class="visually-hidden">Корзина</span></button>
             </li>
-            <li class="products__content product-item product-item--sale">
+            <li class="products__slide product-item product-item--sale">
               <a class="product-item__wrapper" href="#">
                 <p class="product-item__hover-text text">посмотреть товар</p>
                 <img class="product-item__image" src="./images/product-item/product-2.png" alt="Изображение продукта">
@@ -426,7 +504,7 @@
               <button class="product-item__favourite button" type="button"><span class="visually-hidden">Любимый товар</span></button>
               <button class="product-item__basket button" type="button"><span class="visually-hidden">Корзина</span></button>
             </li>
-            <li class="products__content product-item product-item--sale">
+            <li class="products__slide product-item product-item--sale">
               <a class="product-item__wrapper" href="#">
                 <p class="product-item__hover-text text">посмотреть товар</p>
                 <img class="product-item__image" src="./images/product-item/product-2.png" alt="Изображение продукта">
@@ -442,7 +520,7 @@
           </div>
           <div class="products__content">
             <ul id="product-addition-2" class="products__slider tabs-content list">
-            <li class="products__content product-item">
+            <li class="products__slide product-item">
               <a class="product-item__wrapper" href="#">
                 <p class="product-item__hover-text text">посмотреть товар</p>
                 <img class="product-item__image" src="./images/product-item/product-1.png" alt="Изображение продукта">
@@ -454,7 +532,7 @@
               <button class="product-item__favourite button" type="button"><span class="visually-hidden">Любимый товар</span></button>
               <button class="product-item__basket button" type="button"><span class="visually-hidden">Корзина</span></button>
             </li>
-            <li class="products__content product-item product-item--sale">
+            <li class="products__slide product-item product-item--sale">
               <a class="product-item__wrapper" href="#">
                 <p class="product-item__hover-text text">посмотреть товар</p>
                 <img class="product-item__image" src="./images/product-item/product-2.png" alt="Изображение продукта">
@@ -466,7 +544,7 @@
               <button class="product-item__favourite button" type="button"><span class="visually-hidden">Любимый товар</span></button>
               <button class="product-item__basket button" type="button"><span class="visually-hidden">Корзина</span></button>
             </li>
-            <li class="products__content product-item">
+            <li class="products__slide product-item">
               <a class="product-item__wrapper" href="#">
                 <p class="product-item__hover-text text">посмотреть товар</p>
                 <img class="product-item__image" src="./images/product-item/product-3.png" alt="Изображение продукта">
@@ -478,7 +556,7 @@
               <button class="product-item__favourite button" type="button"><span class="visually-hidden">Любимый товар</span></button>
               <button class="product-item__basket button" type="button"><span class="visually-hidden">Корзина</span></button>
             </li>
-            <li class="products__content product-item product-item--sale product-item--not-available">
+            <li class="products__slide product-item product-item--sale product-item--not-available">
               <a class="product-item__wrapper" href="#">
                 <p class="product-item__hover-text text">посмотреть товар</p>
                 <img class="product-item__image" src="./images/product-item/product-4.png" alt="Изображение продукта">
@@ -490,7 +568,7 @@
               <button class="product-item__favourite button" type="button"><span class="visually-hidden">Любимый товар</span></button>
               <button class="product-item__basket button" type="button"><span class="visually-hidden">Корзина</span></button>
             </li>
-            <li class="products__content product-item product-item--sale">
+            <li class="products__slide product-item product-item--sale">
               <a class="product-item__wrapper" href="#">
                 <p class="product-item__hover-text text">посмотреть товар</p>
                 <img class="product-item__image" src="./images/product-item/product-2.png" alt="Изображение продукта">
@@ -502,7 +580,7 @@
               <button class="product-item__favourite button" type="button"><span class="visually-hidden">Любимый товар</span></button>
               <button class="product-item__basket button" type="button"><span class="visually-hidden">Корзина</span></button>
             </li>
-            <li class="products__content product-item product-item--sale">
+            <li class="products__slide product-item product-item--sale">
               <a class="product-item__wrapper" href="#">
                 <p class="product-item__hover-text text">посмотреть товар</p>
                 <img class="product-item__image" src="./images/product-item/product-2.png" alt="Изображение продукта">
@@ -533,39 +611,41 @@
             <button class="page-footer__button button" type="submit">Отправить</button>
           </form>
         </div>
-        <div class="page-footer__info">
-          <span class="page-footer__title">Информация</span>
-          <ul class="page-footer__list list">
-            <li class="page-footer__item">
-              <a class="page-footer__link-info" href="#">О компании</a>
-            </li>
-            <li class="page-footer__item">
-              <a class="page-footer__link-info" href="#">Контакты</a>
-            </li>
-            <li class="page-footer__item">
-              <a class="page-footer__link-info" href="#">Акции</a>
-            </li>
-            <li class="page-footer__item">
-              <a class="page-footer__link-info" href="#">Магазины</a>
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__info">
-          <span class="page-footer__title">Интернет-магазин</span>
-          <ul class="page-footer__list list">
-            <li class="page-footer__item">
-              <a class="page-footer__link-info" href="#">Доставка и самовывоз</a>
-            </li>
-            <li class="page-footer__item">
-              <a class="page-footer__link-info" href="#">Оплата</a>
-            </li>
-            <li class="page-footer__item">
-              <a class="page-footer__link-info" href="#">Возврат-обмен</a>
-            </li>
-            <li class="page-footer__item">
-              <a class="page-footer__link-info" href="#">Новости</a>
-            </li>
-          </ul>
+        <div class="page-footer__wrapper">
+          <div class="page-footer__info">
+            <span class="page-footer__title">Информация</span>
+            <ul class="page-footer__list list">
+              <li class="page-footer__item">
+                <a class="page-footer__link-info" href="#">О компании</a>
+              </li>
+              <li class="page-footer__item">
+                <a class="page-footer__link-info" href="#">Контакты</a>
+              </li>
+              <li class="page-footer__item">
+                <a class="page-footer__link-info" href="#">Акции</a>
+              </li>
+              <li class="page-footer__item">
+                <a class="page-footer__link-info" href="#">Магазины</a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__info">
+            <span class="page-footer__title">Интернет-магазин</span>
+            <ul class="page-footer__list list">
+              <li class="page-footer__item">
+                <a class="page-footer__link-info" href="#">Доставка и самовывоз</a>
+              </li>
+              <li class="page-footer__item">
+                <a class="page-footer__link-info" href="#">Оплата</a>
+              </li>
+              <li class="page-footer__item">
+                <a class="page-footer__link-info" href="#">Возврат-обмен</a>
+              </li>
+              <li class="page-footer__item">
+                <a class="page-footer__link-info" href="#">Новости</a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="page-footer__socials">
           <ul class="socials-list list">

@@ -1,0 +1,23 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+
+  &__item {
+    margin-right: 10px;
+  }
+
+  &__link {
+    font-size: 18px;
+    line-height: 1.22;
+    color: #C4C4C4;
+    padding: 8px 15px;
+    border: 2px solid transparent;
+    display: inline-block;
+
+    &--active {
+      border: 2px solid $brand-color;
+      color: $brand-color;
+      font-weight: 600;
+    }
+  }
+}

@@ -1,0 +1,62 @@
+.filter-button {
+  text-align: center;
+
+  &__send {
+    font-size: 15px;
+    letter-spacing: 0.12em;
+    color: #BDBEC2;
+    background-color: #F0F0F4;
+    padding: 15px 85px;
+    transition: all 0.3s;
+    margin-bottom: 15px;
+
+    &:hover {
+      background-color: darken(#F0F0F4, 10%);
+      color: #ffffff;
+    }
+  }
+
+  &__extra {
+    font-size: 13px;
+    line-height: 1.23;
+    margin-bottom: 15px;
+    padding-right: 30px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 12px;
+      height: 8px;
+      background: url("../images/svg/arrow-drop.svg") no-repeat center;
+      top: 5px;
+      right: 0;
+      transform: rotate(0);
+    }
+  }
+
+  &__extra.aside-filter__title-drop--active {
+    &::after {
+      transform: rotate(-180deg);
+    }
+  }
+
+  &__content {
+    display: none;
+  }
+
+  &__reset {
+    font-size: 13px;
+    line-height: 1.23;
+    color: #C4C4C4;
+    border-bottom: 1px solid #C4C4C4;
+    transition: all 0.3s;
+
+    &:hover {
+      color: darken(#C4C4C4, 10%);
+      border-bottom: 1px solid darken(#C4C4C4, 10%);
+    }
+  }
+}

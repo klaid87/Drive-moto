@@ -19,10 +19,56 @@
     font-size: 14px;
     line-height: 1.21;
     margin-right: 8px;
-    padding: 6px 22px;
+    padding: 10px 22px;
     background-color: #F0F0F4;
     border-radius: 3px;
     opacity: 0.7;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+  }
+
+  &__select-wrapper {
+    position: relative;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      width: 13px;
+      height: 7px;
+      display: block;
+      top: 13px;
+      right: 55px;
+      background: url("../../images/svg/arrow-drop.svg") no-repeat center;
+      pointer-events: none;
+    }
+  }
+
+  &__select {
+    appearance: none;
+    margin-right: 35px;
+    font-size: 14px;
+    line-height: 1.21;
+    color: $text-color;
+    padding: 8px 45px 8px 20px;
+    border: 1.5px solid #D7D9DF;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+      border-color: $brand-color;
+    }
+  }
+
+  &__button {
+    opacity: 0.3;
+    outline: none;
+
+    &--active {
+      opacity: 1;
+    }
   }
 
   &__icon-column {
@@ -35,7 +81,6 @@
   &__icon-line {
     width: 25px;
     height: 19px;
-    opacity: 0.3;
   }
 
   &__inner {

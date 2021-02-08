@@ -26,6 +26,17 @@ $(function() {
     nextArrow: '<button class="products__slider-button products__slider-button--next button" type="button"><img src="./images/svg/arrow-next-black.svg" alt="Стрелка переключения вправо"></button>'
   });
 
+  $('.aside-filter__title-drop, .filter-button__extra').on('click', function() {
+    $(this).toggleClass('aside-filter__title-drop--active');
+    $(this).next().slideToggle();
+  });
+
+  $('.js-range-slider').ionRangeSlider();
+
+  $('.catalog__button').on('click', function() {
+    $(this).addClass('catalog__button--active')
+  });
+
 
 });
 

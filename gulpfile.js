@@ -60,7 +60,12 @@ gulp.task("copy:scripts", function() {
     .pipe(gulp.dest("build"))
 });
 
-gulp.task("copy", gulp.parallel("copy:fonts", "copy:scripts"));
+gulp.task("copy:styles", function() {
+  return gulp.src("src/styles/*.css")
+    .pipe(gulp.dest("build/css"))
+});
+
+gulp.task("copy", gulp.parallel("copy:fonts", "copy:scripts", "copy:styles"));
 
 gulp.task("images:default", function() {
   return gulp.src("src/images/**/*.{png,jpg,svg}")

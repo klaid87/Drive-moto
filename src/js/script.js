@@ -33,8 +33,22 @@ $(function() {
 
   $('.js-range-slider').ionRangeSlider();
 
-  $('.catalog__button').on('click', function() {
-    $(this).addClass('catalog__button--active')
+  $('.catalog__button--column').on('click', function() {
+    $(this).addClass('catalog__button--active');
+    $('.catalog__button--line').removeClass('catalog__button--active');
+    $('.catalog__product').removeClass('catalog__product--list');
+  });
+
+  $('.catalog__button--line').on('click', function() {
+    $(this).addClass('catalog__button--active');
+    $('.catalog__button--column').removeClass('catalog__button--active');
+    $('.catalog__product').addClass('catalog__product--list');
+  });
+
+  $(".rate-yo").rateYo({
+    starWidth: "23px",
+    normalFill: "#C4C4C4",
+    ratedFill: "#1C62CD"
   });
 
 

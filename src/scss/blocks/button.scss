@@ -5,4 +5,13 @@
   cursor: pointer;
   display: inline-block;
   text-transform: uppercase;
+
+  &--primary {
+    color: #ffffff;
+    background-color: $brand-color;
+
+    &:hover {
+      background-color: darken($brand-color, 10%);
+    }
+  }
 }

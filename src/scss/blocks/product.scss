@@ -1,0 +1,112 @@
+.product {
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 80px;
+  }
+
+  &__image-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 500px;
+  }
+
+  &__image {
+    margin-bottom: 15px;
+  }
+
+  &__price {
+    display: inline-block;
+    font-family: "Barlow";
+
+    &--old {
+      font-size: 30px;
+      opacity: 0.6;
+      background: url("../images/svg/old-price-line.svg") no-repeat center;
+    }
+
+    &--new {
+      font-weight: 700;
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__link {
+    font-size: 15px;
+    line-height: 18px;
+    color: $brand-color;
+    transition: all 0.3s;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__description {
+    flex-basis: 570px;
+  }
+
+  &__tab {
+    font-size: 20px;
+    display: inline-block;
+    color: $text-color;
+    opacity: 0.6;
+    padding: 0 15px 5px 0;
+    margin: 0 19px 5px 0;
+
+    &.tab--active {
+      opacity: 1; 
+      border-bottom: 2px solid $brand-color;
+      font-weight: 700;
+      font-size: 20px;
+      color: $text-color;
+    }
+  }
+
+  &__container {
+    margin-bottom: 20px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(47, 48, 53, 0.1);
+    font-size: 20px;
+    color: $text-color;
+    padding-top: 15px;
+  }
+
+  &__column-left {
+    padding-right: 17px;
+  }
+
+  &__column-right {
+    width: 125px;
+  }
+
+  &__more {
+    font-size: 14px;
+    line-height: 1.21;
+    display: inline-block;
+    color: $brand-color;
+    margin-bottom: 45px;
+    border-bottom: 1px solid $brand-color;
+    transition: all 0.3s;
+
+    &:hover {
+      color: darken($brand-color, 10%);
+      border-bottom-color: darken($brand-color, 10%);
+    }
+  }
+
+  &__sale {
+    padding: 16px 53px;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.12em;
+  }
+}

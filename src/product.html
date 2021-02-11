@@ -105,6 +105,7 @@
   </div>
 
   <main>
+
     <section class="product">
       <div class="container">
         <div class="product__inner">
@@ -185,6 +186,147 @@
             <div class="product__button">
               <button class="product__sale button button--primary" type="button">купить</button>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="info">
+      <div class="container">
+        <nav class="info__tabs">
+          <a class="info__tab tab" href="#info-1">О товаре</a>
+          <a class="info__tab tab" href="#info-2">Характеристики</a>
+          <a class="info__tab tab" href="#info-3">Отзывы</a>
+          <a class="info__tab tab tab--active" href="#info-4">Самовывоз</a>
+          <a class="info__tab tab" href="#info-5">Доставка</a>
+          <a class="info__tab tab" href="#info-6">Cервис</a>
+          <a class="info__tab tab" href="#info-7">Гарантия</a>
+        </nav>
+        <div class="info__conteiner">
+          <div id="info-1" class="info__content tabs-content">
+            1
+          </div>
+          <div id="info-2" class="info__content tabs-content">
+            2
+          </div>
+          <div id="info-3" class="info__content tabs-content">
+            3
+          </div>
+          <div id="info-4" class="info__content tabs-content tabs-content--active">
+            <form class="info__form info-form" action="#" method="POST">
+              <div class="info-form__action">
+                <p class="info-form__wrapper text">
+                  <label class="info-form__label info-form__label--margin-r" for="shop">Магазин</label>
+                  <input id="shop" class="info-form__search" type="text" name="shop">
+                </p>
+                <p class="info-form__wrapper text">
+                  <input id="now" class="info-form__radio visually-hidden" type="radio" name="pickup">
+                  <label class="info-form__label info-form__label--radio" for="now">Забрать сегодня</label>
+                </p>
+                <p class="info-form__wrapper text">
+                  <input id="later" class="info-form__radio visually-hidden" type="radio" name="pickup">
+                  <label class="info-form__label info-form__label--radio" for="later">Забрать в течение недели</label>
+                </p>
+              </div>
+              <table class="info__table table-info">
+                <tr class="table-info__row">
+                  <th class="table-info__title">Адрес</th>
+                  <th class="table-info__title">Режим работы</th>
+                  <th class="table-info__title">Доступно</th>
+                  <th class="table-info__title">Количество</th>
+                  <th class="table-info__title"></th>
+                </tr>
+                <tr class="table-info__row">
+                  <td class="table-info__cell">Москва, ул. Науки 25</td>
+                  <td class="table-info__cell">
+                    <div class="table-info__cell-wrapper">
+                      <div class="table-info__days">
+                        <span>пн-сб:</span>
+                        <span>вс</span>
+                      </div>
+                      <div class="table-info__time">
+                        <span>08:00-19:00</span>
+                        <span>09:00-17:00</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="table-info__cell">В наличии</td>
+                  <td class="table-info__cell">1</td>
+                  <td class="table-info__cell">
+                    <button class="table-info__button button button--primary" type="submit">купить</button>
+                  </td>
+                </tr>
+                <tr class="table-info__row">
+                  <td class="table-info__cell">Москва, ул.  Южная 134</td>
+                  <td class="table-info__cell">
+                    <div class="table-info__cell-wrapper">
+                      <div class="table-info__days">
+                        <span>пн-сб:</span>
+                        <span>вс</span>
+                      </div>
+                      <div class="table-info__time">
+                        <span>08:00-19:00</span>
+                        <span>09:00-17:00</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="table-info__cell">В наличии</td>
+                  <td class="table-info__cell">2</td>
+                  <td class="table-info__cell">
+                    <button class="table-info__button button button--primary" type="submit">купить</button>
+                  </td>
+                </tr>
+                <tr class="table-info__row">
+                  <td class="table-info__cell">Санкт-Петербург, ул. Красная 19</td>
+                  <td class="table-info__cell">
+                    <div class="table-info__cell-wrapper">
+                      <div class="table-info__days">
+                        <span>пн-сб:</span>
+                        <span>вс</span>
+                      </div>
+                      <div class="table-info__time">
+                        <span>08:00-19:00</span>
+                        <span>09:00-17:00</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="table-info__cell">Нет в наличии</td>
+                  <td class="table-info__cell">0</td>
+                  <td class="table-info__cell">
+                    <button class="table-info__button button button--primary" type="submit">купить</button>
+                  </td>
+                </tr>
+                <tr class="table-info__row">
+                  <td class="table-info__cell">Киев, ул Шевченко 167</td>
+                  <td class="table-info__cell">
+                    <div class="table-info__cell-wrapper">
+                      <div class="table-info__days">
+                        <span>пн-сб:</span>
+                        <span>вс</span>
+                      </div>
+                      <div class="table-info__time">
+                        <span>08:00-19:00</span>
+                        <span>09:00-17:00</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="table-info__cell">Нет в наличии</td>
+                  <td class="table-info__cell">0</td>
+                  <td class="table-info__cell">
+                    <button class="table-info__button button button--primary" type="submit">купить</button>
+                  </td>
+                </tr>
+              </table>
+            </form>
+          </div>
+          <div id="info-5" class="info__content tabs-content">
+            5
+          </div>
+          <div id="info-6" class="info__content tabs-content">
+            6
+          </div>
+          <div id="info-7" class="info__content tabs-content">
+            7
           </div>
         </div>
       </div>

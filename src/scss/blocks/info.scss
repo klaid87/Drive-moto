@@ -1,0 +1,25 @@
+.info {
+  &__tabs {
+    background-color: #F0F0F4;
+    display: flex;
+    justify-content: space-around;
+    padding: 22px 0 15px;
+    margin-bottom: 50px;
+  }
+
+  &__tab {
+    font-size: 20px;
+    display: inline-block;
+    color: rgba(47, 48, 53, 0.6);
+    padding: 0 10px 5px 0;
+
+    &.tab--active {
+      border-bottom: 2px solid $brand-color;
+      color: $text-color;
+    }
+  }
+
+  &__form {
+    padding-left: 35px;
+  }
+}

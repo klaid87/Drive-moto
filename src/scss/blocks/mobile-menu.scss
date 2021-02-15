@@ -1,0 +1,16 @@
+@media(max-width: $tablet-width) {
+  .mobile-menu {
+    display: flex;
+    width: 450px;
+
+    &__item {
+      margin-right: 15px;
+      padding: 15px 0;
+    }
+
+    &__link {
+      color: $text-color;
+      font-weight: 700;
+    }
+  }
+}

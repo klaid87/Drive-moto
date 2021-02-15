@@ -1,0 +1,75 @@
+.menu-mobile {
+  max-width: 243px;
+  background-color: #ffffff;
+
+  &__item {
+    &:not(:last-child) {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      padding-top: 65px;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    color: $text-color;
+    padding: 46px 5px 0 53px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 24px;
+      left: 10px;
+      bottom: 0;    
+    }
+
+    &--has-icon-user {
+      &::before {
+        background: url('../images/svg/user.svg') no-repeat center;
+      }
+    }
+
+    &--has-icon-heart {
+      &::before {
+        background: url('../images/svg/heart.svg') no-repeat center;
+      }
+    }
+
+    &--has-icon-basket {
+      &::before {
+        background: url('../../images/svg/basket.svg') no-repeat center;
+      }
+    }
+
+    &--has-icon-home {
+      &::before {
+        background: url('../../images/svg/home.svg') no-repeat center;
+      }
+    }
+
+    &--has-icon-percent {
+      &::before {
+        background: url('../../images/svg/percent.svg') no-repeat center;
+      }
+    }
+
+    &--has-icon-box {
+      &::before {
+        background: url('../../images/svg/box.svg') no-repeat center;
+      }
+    }
+
+    &--has-address {
+      padding: 65px 44px 136px;
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  &__address {
+    font-weight: 700;
+    font-style: normal;
+  }
+}

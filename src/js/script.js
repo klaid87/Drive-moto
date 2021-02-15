@@ -45,12 +45,18 @@ $(function() {
     $('.catalog__product').addClass('catalog__product--list');
   });
 
-  $(".rate-yo").rateYo({
-    starWidth: "23px",
-    normalFill: "#C4C4C4",
-    ratedFill: "#1C62CD"
+  $(function () {
+    $('.rate-yo').rateYo({
+      starWidth: "23px",
+      normalFill: "#C4C4C4",
+      ratedFill: "#1C62CD"
+    });
   });
 
+  $('.header__burger').on('click', function() {
+    $('.header__burger').toggleClass('header__burger--opened');
+    $('.header__menu-mobile').toggleClass('header__menu-mobile--opened');
+  });
 
 });
 

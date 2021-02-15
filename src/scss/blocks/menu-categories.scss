@@ -35,3 +35,9 @@
     }
   }
 }
+
+@media(max-width: $tablet-width) {
+  .menu-categories {
+    display: none;
+  }
+}

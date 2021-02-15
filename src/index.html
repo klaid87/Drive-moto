@@ -16,6 +16,7 @@
     <div class="header__top">
       <div class="container">
         <div class="header__top-inner">
+          <button class="header__burger button" type="button"><span class="visually-hidden">Menu open button</span></button>
           <nav class="menu">
             <ul class="menu__list list">
               <li class="menu__item">
@@ -30,7 +31,10 @@
             </ul>
           </nav>
           <a class="logo" href="#">
-            <img class="logo__image" src="./images/svg/logo.svg" alt="Логотип Drive-moto">
+            <picture class="logo__pictures">
+              <source media="(max-width: 660px)" srcset="./images/header/logo-mobile.png">
+              <img class="logo__image" src="./images/svg/logo.svg" alt="Логотип Drive-moto">
+            </picture>
           </a>
           <div class="header__action">
             <address class="header__address">Москва, ул. Науки 25</address>
@@ -54,6 +58,58 @@
             </ul>
           </div>
         </div>
+        <ul class="header__menu-mobile menu-mobile list">
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link menu-mobile__link--has-icon-user" href="#">Войти</a>
+          </li>
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link menu-mobile__link--has-icon-user" href="#">Регистрация</a>
+          </li>
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link menu-mobile__link--has-icon-heart" href="#">Избранное</a>
+          </li>
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link menu-mobile__link--has-icon-basket" href="#">Корзина</a>
+          </li>
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link menu-mobile__link--has-icon-home" href="#">Магазины</a>
+          </li>
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link menu-mobile__link--has-icon-percent" href="#">Акции</a>
+          </li>
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link menu-mobile__link--has-icon-box" href="#">Доставка и оплата</a>
+          </li>
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">Квадроциклы</a>
+          </li>
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">Катера</a>
+          </li>
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">Гидроциклы</a>
+          </li>
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">Лодки</a>
+          </li>
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">Вездеходы</a>
+          </li>
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">Снегоходы</a>
+          </li>
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">Двигатели</a>
+          </li>
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">Запчасти</a>
+          </li>
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link menu-mobile__link--has-address" href="#">
+              <address class="menu-mobile__address">Москва, ул. Науки  25</address>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
     <div class="header__bottom">
@@ -84,11 +140,24 @@
             <a class="menu-categories__link" href="#">Запчасти</a>
           </li>
         </ul>
+        <div class="header__mobile-menu-wrapper">
+          <ul class="header__mobile-menu mobile-menu list">
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">Магазины</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">Акции</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">Доставка и оплата</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </header>
   
-  <main>
+  <!-- <main>
     <section class="banner-section">
       <h2 class="visually-hidden">Секция с банером и акционной картой продукта</h2>
       <div class="container">
@@ -416,7 +485,7 @@
             </li>
             </ul>
           </div> <!--products-slider-->
-          <div class="products__more">
+          <!-- <div class="products__more">
             <a class="products__more-link" href="#">Показать еще</a>
           </div>
         </div>
@@ -595,7 +664,7 @@
             </li>
             </ul>
           </div> <!--products-slider-->
-        </div>
+        <!-- </div>
       </div>
     </section>
   </main>
@@ -678,10 +747,12 @@
         <a class="page-footer__link" href="#">Политика обработки персональных данных</a>
       </div>
     </div>
-  </footer>
+  </footer> --> 
+
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="js/slick/slick.min.js"></script>
   <script src="js/rangeSl/ion.rangeSlider.min.js"></script>
+  <script src="js/rateyo/jquery.rateyo.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 

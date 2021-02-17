@@ -1,7 +1,10 @@
+.mobile-menu {
+  display: none;
+}
+
 @media(max-width: $tablet-width) {
   .mobile-menu {
     display: flex;
-    width: 450px;
 
     &__item {
       margin-right: 15px;

@@ -61,11 +61,8 @@
 
 @media(max-width: $tablet-width) {
   .header {
+    margin-bottom: 40px;
     position: relative;
-
-    &__address {
-      display: none;
-    }
 
     &__burger {
       display: block;
@@ -123,12 +120,19 @@
       }
     }
 
-    &__mobile-menu-wrapper {
-      display: block;
+    &__bottom {
       background-color: #F0F0F4;
-      margin: 0 -15px;
-      padding: 0 15px;
       overflow: auto;
+    }
+  }
+}
+
+@media(max-width: $mobile-width) {
+  .header {
+    margin-bottom: 25px;
+    
+    &__address {
+      display: none;
     }
   }
 }

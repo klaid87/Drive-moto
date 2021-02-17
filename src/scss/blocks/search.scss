@@ -12,9 +12,11 @@
   }
 
   &__item {
-    background-color: $base-color;
-    border-radius: 5px;
-    text-shadow: 0 0 .9px $text-color, 0 0 .9px $text-color;
+    &.tab--active {
+      background-color: $base-color;
+      border-radius: 5px;
+      text-shadow: 0 0 .9px $text-color, 0 0 .9px $text-color;
+    }
   }
 
   &__form {
@@ -42,5 +44,56 @@
     padding: 17px 40px;
     border-radius: 3px;
     margin-left: -1px;
+  }
+}
+
+@media(max-width: $tablet-width) {
+  .search {
+    &__item {
+      padding: 10px 15px;
+    }
+  }
+}
+
+@media(max-width: $mobile-width) {
+  .search {
+    &__items {
+      overflow: auto;
+      white-space: nowrap;
+    }
+
+    &__item {
+      padding: 0 0 5px;
+      margin-right: 10px;
+
+      &.tab--active {
+        background-color: transparent;
+        border-bottom: 2px solid $brand-color;
+        border-radius: 0;
+      }
+    }
+
+    &__form {
+      position: relative;
+      
+      &::before {
+        content: "";
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        top: 50%;
+        right: 15px;
+        transform: translateY(-50%);
+        background: url("../images/svg/search-icon.svg") no-repeat center;
+      }
+    }
+
+    &__input {
+      padding: 15px 20px;
+    }
+
+    &__button {
+      display: none;
+    }
   }
 }

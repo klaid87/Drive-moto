@@ -37,7 +37,16 @@ $(function() {
     slidesToScroll: 1,
     variableWidth: true,
     prevArrow: '<button class="products__slider-button products__slider-button--prev button" type="button"><img src="./images/svg/arrow-prew-black.svg" alt="Стрелка переключения влево"></button>',
-    nextArrow: '<button class="products__slider-button products__slider-button--next button" type="button"><img src="./images/svg/arrow-next-black.svg" alt="Стрелка переключения вправо"></button>'
+    nextArrow: '<button class="products__slider-button products__slider-button--next button" type="button"><img src="./images/svg/arrow-next-black.svg" alt="Стрелка переключения вправо"></button>',
+    responsive: [
+      {
+        breakpoint: 1301,
+        settings: {
+          adaptiveHeight: true,
+          arrows: false
+        }
+      }
+    ]
   });
 
   $('.aside-filter__title-drop, .filter-button__extra').on('click', function() {

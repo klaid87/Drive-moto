@@ -85,3 +85,19 @@
     object-fit: contain;
   }
 }
+
+@media(max-width: 1200px) {
+  .categories {
+    &__list {
+      justify-content: space-around;
+    }
+  }
+}
+
+@media(max-width: $tablet-width) {
+  .categories {
+    &__title {
+      font-size: 18px;
+    }
+  }
+}

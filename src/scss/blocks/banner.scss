@@ -1,3 +1,13 @@
 .banner {
   margin-bottom: 70px;
 }
+
+@media(max-width: $mobile-width) {
+  .banner {
+    margin-bottom: 80px;
+    
+    &__image {
+      width: 100%;
+    }
+  }
+}

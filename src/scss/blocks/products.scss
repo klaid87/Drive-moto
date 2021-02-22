@@ -72,3 +72,70 @@
     color: $text-color;
   }
 }
+
+@media(max-width: 1370px) {
+  .products {
+    &__content {
+      margin-bottom: 55px;
+    }
+
+    &__dots {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      bottom: -25px;
+      list-style: none;
+      width: 100%;
+
+    li {
+      margin-right: 10px;
+      
+      &.slick-active {
+        button {
+          background-color: $brand-color;
+        }
+      }
+    }
+
+    button {
+      font-size: 0;
+      padding: 0;
+      margin: 0;
+      width: 14px;
+      height: 14px;
+      border: 1px solid transparent;
+      border-radius: 50%;
+      cursor: pointer;
+      outline: none;
+    }
+    }
+  }
+}
+
+@media(max-width: $tablet-width) {
+  .products {
+    &__heading {
+      text-align: center;
+    }
+
+    &__items {
+      margin-bottom: 20px;
+    }
+
+    &__slide {
+      margin-right: 35px;
+    }
+  }
+}
+
+@media(max-width: $mobile-width) {
+  .products {
+    &__content {
+      margin-bottom: 75px;
+    }
+    
+    &__slide {
+      margin-right: 20px;
+    }
+  }
+}

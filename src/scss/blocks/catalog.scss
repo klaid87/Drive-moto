@@ -19,10 +19,13 @@
     font-size: 14px;
     line-height: 1.21;
     margin-right: 8px;
-    padding: 10px 22px;
     background-color: #F0F0F4;
-    border-radius: 3px;
     opacity: 0.7;
+  }
+
+  &__filter-button {
+    padding: 10px 22px;
+    border-radius: 3px;
   }
 
   &__buttons {

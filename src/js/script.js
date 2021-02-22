@@ -35,15 +35,47 @@ $(function() {
   $('.products__slider').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
-    variableWidth: true,
+    variableWidth: false,
     prevArrow: '<button class="products__slider-button products__slider-button--prev button" type="button"><img src="./images/svg/arrow-prew-black.svg" alt="Стрелка переключения влево"></button>',
     nextArrow: '<button class="products__slider-button products__slider-button--next button" type="button"><img src="./images/svg/arrow-next-black.svg" alt="Стрелка переключения вправо"></button>',
     responsive: [
       {
-        breakpoint: 1301,
+        breakpoint: 1371,
         settings: {
-          adaptiveHeight: true,
-          arrows: false
+          arrows: false,
+          variableWidth: false,
+          dots: true,
+          dotsClass: 'products__dots'
+        }
+      },
+      {
+        breakpoint: 1201,
+        settings: {
+          slidesToShow: 3,
+          variableWidth: false,
+          arrows: false,
+          dots: true,
+          dotsClass: 'products__dots'
+        }
+      },
+      {
+        breakpoint: 830,
+        settings: {
+          slidesToShow: 2,
+          variableWidth: false,
+          arrows: false,
+          dots: true,
+          dotsClass: 'products__dots'
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          variableWidth: false,
+          arrows: false,
+          dots: true,
+          dotsClass: 'products__dots'
         }
       }
     ]
@@ -79,6 +111,11 @@ $(function() {
   $('.header__burger').on('click', function() {
     $('.header__burger').toggleClass('header__burger--opened');
     $('.header__menu-mobile').toggleClass('header__menu-mobile--opened');
+  });
+
+  $('.page-footer__title').on('click', function() {
+    $(this).next().slideToggle();
+    $(this).toggleClass('page-footer__title--active')
   });
 
 });

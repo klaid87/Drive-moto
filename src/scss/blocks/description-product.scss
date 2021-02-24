@@ -16,3 +16,22 @@
     margin-bottom: 50px;
   }
 }
+
+@media(max-width: $mobile-width) {
+  .description-product {
+    flex-basis: auto;
+
+    &__title {
+      font-size: 20px;
+      margin-bottom: 40px;
+    }
+
+    &__code {
+      margin-bottom: 5px;
+    }
+
+    &__action {
+      margin-bottom: 80px;
+    }
+  }
+}

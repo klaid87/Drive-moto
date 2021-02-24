@@ -11,11 +11,12 @@
 </head>
 <body>
 
-  <header class="header header--catalog">
+  <header class="header">
     <h1 class="visually-hidden">Интернет магазин Drive-moto</h1>
     <div class="header__top">
       <div class="container">
         <div class="header__top-inner">
+          <button class="header__burger button" type="button"><span class="visually-hidden">Menu open button</span></button>
           <nav class="menu">
             <ul class="menu__list list">
               <li class="menu__item">
@@ -30,7 +31,10 @@
             </ul>
           </nav>
           <a class="logo" href="index.html">
-            <img class="logo__image" src="./images/svg/logo.svg" alt="Логотип Drive-moto">
+            <picture class="logo__pictures">
+              <source media="(max-width: 660px)" srcset="./images/header/logo-mobile.png">
+              <img class="logo__image" src="./images/svg/logo.svg" alt="Логотип Drive-moto">
+            </picture>
           </a>
           <div class="header__action">
             <address class="header__address">Москва, ул. Науки 25</address>
@@ -54,34 +58,56 @@
             </ul>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="header__bottom">
-      <div class="container">
-        <ul class="menu-categories list">
-          <li class="menu-categories__item">
-            <a class="menu-categories__link" href="#">Квадроциклы</a>
+        <ul class="header__menu-mobile menu-mobile list">
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link menu-mobile__link--has-icon-user" href="#">Войти</a>
           </li>
-          <li class="menu-categories__item">
-            <a class="menu-categories__link" href="#">Катера</a>
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link menu-mobile__link--has-icon-user" href="#">Регистрация</a>
           </li>
-          <li class="menu-categories__item">
-            <a class="menu-categories__link" href="#">Гидроциклы</a>
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link menu-mobile__link--has-icon-heart" href="#">Избранное</a>
           </li>
-          <li class="menu-categories__item">
-            <a class="menu-categories__link" href="#">Лодки</a>
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link menu-mobile__link--has-icon-basket" href="#">Корзина</a>
           </li>
-          <li class="menu-categories__item">
-            <a class="menu-categories__link" href="#">Вездеходы</a>
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link menu-mobile__link--has-icon-home" href="#">Магазины</a>
           </li>
-          <li class="menu-categories__item">
-            <a class="menu-categories__link" href="#">Снегоходы</a>
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link menu-mobile__link--has-icon-percent" href="#">Акции</a>
           </li>
-          <li class="menu-categories__item">
-            <a class="menu-categories__link" href="#">Двигатели</a>
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link menu-mobile__link--has-icon-box" href="#">Доставка и оплата</a>
           </li>
-          <li class="menu-categories__item">
-            <a class="menu-categories__link" href="#">Запчасти</a>
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">Квадроциклы</a>
+          </li>
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">Катера</a>
+          </li>
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">Гидроциклы</a>
+          </li>
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">Лодки</a>
+          </li>
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">Вездеходы</a>
+          </li>
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">Снегоходы</a>
+          </li>
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">Двигатели</a>
+          </li>
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">Запчасти</a>
+          </li>
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link menu-mobile__link--has-address" href="#">
+              <address class="menu-mobile__address">Москва, ул. Науки  25</address>
+            </a>
           </li>
         </ul>
       </div>
@@ -90,7 +116,7 @@
 
   <div class="breadcrumbs">
     <div class="container">
-      <ul class="breadcrumbs__list list">
+      <ul class="breadcrumbs__list list mobile-overflow">
         <li class="breadcrumbs__item">
           <a class="breadcrumbs__link" href="index.html">Главная</a>
         </li>
@@ -114,6 +140,9 @@
             <span class="product__price product__price--old">1 200 475 ₽</span>
             <span class="product__price product__price--new">1 100 475 ₽</span>
             <a class="product__link" href="#">Нашли дешевле? Снизим цену!</a>
+            <div class="product__button product__button--mobile">
+              <button class="product__sale button button--primary" type="button">купить</button>
+            </div>
           </div>
           <div class="product__description description-product">
             <h1 class="description-product__title heading">Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic</h1>
@@ -191,7 +220,7 @@
       </div>
     </section>
 
-    <section class="info">
+    <!-- <section class="info">
       <div class="container">
         <nav class="info__tabs">
           <a class="info__tab tab" href="#info-1">О товаре</a>
@@ -330,13 +359,13 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section class="products">
       <div class="container">
         <div class="products__inner">
           <h3 class="products__heading heading heading--font">С этим товаром покупают</h3>
-          <nav class="products__items">
+          <nav class="products__items mobile-overflow">
             <a class="products__item tab tab--active" href="#product-addition-1">запчасти</a>
             <a class="products__item tab" href="#product-addition-2">моторы</a>
             <a class="products__item tab" href="#product-addition-3">шины</a>

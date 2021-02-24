@@ -1,6 +1,4 @@
-@media(max-width: $tablet-width) {
-  .mobile-overflow {
-    overflow: auto;
-    white-space: nowrap;
-  }
+.mobile-overflow {
+  overflow: auto;
+  white-space: nowrap;
 }

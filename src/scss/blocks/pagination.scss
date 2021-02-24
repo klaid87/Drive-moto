@@ -21,3 +21,15 @@
     }
   }
 }
+
+@media(max-width: $mobile-width) {
+  .pagination {
+    &__item {
+      margin-right: 5px;
+    }
+
+    &__link {
+      padding: 5px 10px;
+    }
+  }
+}

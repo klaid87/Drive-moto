@@ -52,6 +52,7 @@
     font-size: 14px;
     line-height: 1.21;
     font-weight: 700;
+    pointer-events: none;
   }
 
   &__item {
@@ -169,6 +170,7 @@
       font-weight: 500;
       display: block;
       position: relative;
+      pointer-events: auto;
 
       &::after {
         content: "";

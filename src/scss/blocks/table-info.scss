@@ -1,6 +1,6 @@
 .table-info {
-  width: 100%;
   border-collapse: collapse;
+  width: 100%;
 
   &__row {
     &:not(:first-of-type) {
@@ -20,26 +20,26 @@
     color: rgba(47, 48, 53, 0.7);
     padding: 30px 0 20px;
 
-    &:nth-child(1) {
-      width: 300px;
-      padding-right: 90px;
-    }
+    // &:nth-child(1) {
+    //   width: 300px;
+    //   padding-right: 90px;
+    // }
 
-    &:nth-child(2) {
-      width: 255px;
-    }
+    // &:nth-child(2) {
+    //   width: 255px;
+    // }
 
-    &:nth-child(3) {
-      width: 200px;
-    }
+    // &:nth-child(3) {
+    //   width: 200px;
+    // }
 
-    &:nth-child(4) {
-      width: 235px;
-    }
+    // &:nth-child(4) {
+    //   width: 235px;
+    // }
 
-    &:last-of-type {
-      text-align: end;
-    }
+    // &:last-of-type {
+    //   text-align: end;
+    // }
   }
 
   &__cell-wrapper {
@@ -62,5 +62,49 @@
     letter-spacing: 0.12em;
     padding: 10px 40px;
     border-radius: 3px;
+  }
+}
+
+@media(max-width: $tablet-width) {
+  .table-info {
+    &__title {
+      display: none;
+    }
+
+    &__row {
+      display: block;
+    }
+
+    &__cell {
+      display: flex;
+      justify-content: space-between;
+
+      &::before {
+        content: attr(data-label);
+        font-weight: 700;
+        font-size: 20px;
+        color: $text-color;
+      }
+
+      &:last-of-type {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media(max-width: $mobile-width) {
+  .table-info {
+    &__cell {
+      justify-content: space-between;
+
+      &::before {
+        font-size: 16px;
+      }
+    }
+
+    &__button {
+      width: 100%;
+    }
   }
 }

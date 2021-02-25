@@ -20,26 +20,9 @@
     color: rgba(47, 48, 53, 0.7);
     padding: 30px 0 20px;
 
-    // &:nth-child(1) {
-    //   width: 300px;
-    //   padding-right: 90px;
-    // }
-
-    // &:nth-child(2) {
-    //   width: 255px;
-    // }
-
-    // &:nth-child(3) {
-    //   width: 200px;
-    // }
-
-    // &:nth-child(4) {
-    //   width: 235px;
-    // }
-
-    // &:last-of-type {
-    //   text-align: end;
-    // }
+    &:last-of-type {
+      text-align: end;
+    }
   }
 
   &__cell-wrapper {

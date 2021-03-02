@@ -31,5 +31,9 @@
     &__tab {
       font-size: 16px;
     }
+
+    &__tabs {
+      justify-content: space-between;
+    }
   }
 }
